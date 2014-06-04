@@ -1,0 +1,296 @@
+extends layout
+
+block content
+  header
+    .container
+      .row
+        .col-lg-12
+          img.img-responsive(src='/images/profile.png', alt='')
+          .intro-text
+            span.name Web Day ESGI
+            hr.star-light
+            span.skills Conférence Développement Web ESGI
+  section#speakers
+    .container
+      .row
+        .col-lg-12.text-center
+          h2 Speakers
+          hr.star-primary
+      .row
+        .col-sm-4.portfolio-item
+          a.portfolio-link(href='#portfolioModal1', data-toggle='modal')
+            .caption
+              .caption-content
+                i.fa.fa-search-plus.fa-3x
+            img.img-responsive(src='/images/portfolio/cabin.png', alt='')
+        .col-sm-4.portfolio-item
+          a.portfolio-link(href='#portfolioModal2', data-toggle='modal')
+            .caption
+              .caption-content
+                i.fa.fa-search-plus.fa-3x
+            img.img-responsive(src='/images/portfolio/cake.png', alt='')
+        .col-sm-4.portfolio-item
+          a.portfolio-link(href='#portfolioModal3', data-toggle='modal')
+            .caption
+              .caption-content
+                i.fa.fa-search-plus.fa-3x
+            img.img-responsive(src='/images/portfolio/circus.png', alt='')
+        .col-sm-4.portfolio-item
+          a.portfolio-link(href='#portfolioModal4', data-toggle='modal')
+            .caption
+              .caption-content
+                i.fa.fa-search-plus.fa-3x
+            img.img-responsive(src='/images/portfolio/game.png', alt='')
+        .col-sm-4.portfolio-item
+          a.portfolio-link(href='#portfolioModal5', data-toggle='modal')
+            .caption
+              .caption-content
+                i.fa.fa-search-plus.fa-3x
+            img.img-responsive(src='/images/portfolio/safe.png', alt='')
+        .col-sm-4.portfolio-item
+          a.portfolio-link(href='#portfolioModal6', data-toggle='modal')
+            .caption
+              .caption-content
+                i.fa.fa-search-plus.fa-3x
+            img.img-responsive(src='/images/portfolio/submarine.png', alt='')
+  section#about.success
+    .container
+      .row
+        .col-lg-12.text-center
+          h2 À propos
+          hr.star-light
+      .row
+        .col-lg-4.col-lg-offset-2
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            | Curabitur mollis nunc non mollis tempor. Maecenas et accumsan orci.
+            | Pellentesque non leo ac dolor tempor dictum. Aenean placerat tristique
+            | purus, sit amet facilisis lorem dictum ut. Nam laoreet nisi dapibus,
+            | mollis tellus eu, vulputate purus. Mauris vel quam in enim
+            | fringilla congue at nec tortor.
+        .col-lg-4
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            | Curabitur mollis nunc non mollis tempor. Maecenas et accumsan orci.
+            | Pellentesque non leo ac dolor tempor dictum. Aenean placerat tristique
+            | purus, sit amet facilisis lorem dictum ut. Nam laoreet nisi dapibus,
+            | mollis tellus eu, vulputate purus. Mauris vel quam in enim
+            | fringilla congue at nec tortor
+  section#contact
+    .container
+      .row
+        .col-lg-12.text-center
+          h2 Contactez-nous
+          hr.star-primary
+      .row
+        .col-lg-8.col-lg-offset-2
+          form(role='form')
+            .row
+              .form-group.col-xs-12.floating-label-form-group
+                label(for='name') Nom
+                input.form-control(type='text', name='name', placeholder='Nom')
+            .row
+              .form-group.col-xs-12.floating-label-form-group
+                label(for='email') Adresse e-mail
+                input.form-control(type='email', name='email', placeholder='Adresse e-mail')
+            .row
+              .form-group.col-xs-12.floating-label-form-group
+                label(for='message') Message
+                textarea.form-control(placeholder='Message', rows='5')
+            br
+            .row
+              .form-group.col-xs-12
+                button.btn.btn-lg.btn-success(type='submit') Envoyer
+
+
+  #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-content
+      .close-modal(data-dismiss='modal')
+        .lr
+          .rl
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+              h2 Project Title
+              hr.star-primary
+              img.img-responsive.img-centered(src='/images/portfolio/safe.png' alt="")
+              p
+                | Use this area of the page to describe your project. The icon above is part of a free icon set by
+                a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
+                | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+              ul.list-inline.item-details
+                li
+                  | Client:
+                  strong
+                    a(href='http://startbootstrap.com') Start Bootstrap
+                li
+                  | Date:
+                  strong
+                    a(href='http://startbootstrap.com') April 2014
+                li
+                  | Service:
+                  strong
+                    a(href='http://startbootstrap.com') Web Development
+              button.btn.btn-default(type='button', data-dismiss='modal')
+                i.fa.fa-times
+                | Close
+  #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-content
+      .close-modal(data-dismiss='modal')
+        .lr
+          .rl
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            .modal-body
+              h2 Project Title
+              hr.star-primary
+              img.img-responsive.img-centered(src='/images/portfolio/cake.png' alt="")
+              p
+                | Use this area of the page to describe your project. The icon above is part of a free icon set by
+                a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
+                | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+              ul.list-inline.item-details
+                li
+                  | Client:
+                  strong
+                    a(href='http://startbootstrap.com') Start Bootstrap
+                li
+                  | Date:
+                  strong
+                    a(href='http://startbootstrap.com') April 2014
+                li
+                  | Service:
+                  strong
+                    a(href='http://startbootstrap.com') Web Development
+              button.btn.btn-default(type='button', data-dismiss='modal')
+                i.fa.fa-times
+                | Close
+  #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-content
+      .close-modal(data-dismiss='modal')
+        .lr
+          .rl
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            .modal-body
+              h2 Project Title
+              hr.star-primary
+              img.img-responsive.img-centered(src='/images/portfolio/circus.png' alt="")
+              p
+                | Use this area of the page to describe your project. The icon above is part of a free icon set by
+                a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
+                | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+              ul.list-inline.item-details
+                li
+                  | Client:
+                  strong
+                    a(href='http://startbootstrap.com') Start Bootstrap
+                li
+                  | Date:
+                  strong
+                    a(href='http://startbootstrap.com') April 2014
+                li
+                  | Service:
+                  strong
+                    a(href='http://startbootstrap.com') Web Development
+              button.btn.btn-default(type='button', data-dismiss='modal')
+                i.fa.fa-times
+                | Close
+  #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-content
+      .close-modal(data-dismiss='modal')
+        .lr
+          .rl
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            .modal-body
+              h2 Project Title
+              hr.star-primary
+              img.img-responsive.img-centered(src='/images/portfolio/game.png' alt="")
+              p
+                | Use this area of the page to describe your project. The icon above is part of a free icon set by
+                a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
+                | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+              ul.list-inline.item-details
+                li
+                  | Client:
+                  strong
+                    a(href='http://startbootstrap.com') Start Bootstrap
+                li
+                  | Date:
+                  strong
+                    a(href='http://startbootstrap.com') April 2014
+                li
+                  | Service:
+                  strong
+                    a(href='http://startbootstrap.com') Web Development
+              button.btn.btn-default(type='button', data-dismiss='modal')
+                i.fa.fa-times
+                | Close
+  #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-content
+      .close-modal(data-dismiss='modal')
+        .lr
+          .rl
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            .modal-body
+              h2 Project Title
+              hr.star-primary
+              img.img-responsive.img-centered(src='/images/portfolio/safe.png' alt="")
+              p
+                | Use this area of the page to describe your project. The icon above is part of a free icon set by
+                a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
+                | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+              ul.list-inline.item-details
+                li
+                  | Client:
+                  strong
+                    a(href='http://startbootstrap.com') Start Bootstrap
+                li
+                  | Date:
+                  strong
+                    a(href='http://startbootstrap.com') April 2014
+                li
+                  | Service:
+                  strong
+                    a(href='http://startbootstrap.com') Web Development
+              button.btn.btn-default(type='button', data-dismiss='modal')
+                i.fa.fa-times
+                | Close
+  #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-content
+      .close-modal(data-dismiss='modal')
+        .lr
+          .rl
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            .modal-body
+              h2 Project Title
+              hr.star-primary
+              img.img-responsive.img-centered(src='/images/portfolio/submarine.png' alt="")
+              p
+                | Use this area of the page to describe your project. The icon above is part of a free icon set by
+                a(href='https://sellfy.com/p/8Q9P/jV3VZ/') Flat Icons
+                | . On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+              ul.list-inline.item-details
+                li
+                  | Client:
+                  strong
+                    a(href='http://startbootstrap.com') Start Bootstrap
+                li
+                  | Date:
+                  strong
+                    a(href='http://startbootstrap.com') April 2014
+                li
+                  | Service:
+                  strong
+                    a(href='http://startbootstrap.com') Web Development
+              button.btn.btn-default(type='button', data-dismiss='modal')
+                i.fa.fa-times
+                | Close

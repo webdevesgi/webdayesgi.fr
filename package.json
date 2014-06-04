@@ -1,0 +1,33 @@
+{
+  "name": "webdayesgi.fr",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:webdevesgi/webdayesgi.fr.git"
+  },
+  "author": "rhannequin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webdevesgi/webdayesgi.fr/issues"
+  },
+  "homepage": "https://github.com/webdevesgi/webdayesgi.fr",
+  "dependencies": {
+    "express": "^4.2.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0",
+    "logfmt": "^1.1.2"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
